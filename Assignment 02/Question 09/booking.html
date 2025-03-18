@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - Rome Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://via.placeholder.com/100" alt="Rome Tourism Logo" class="logo">
+            <h1>ROME</h1>
+            <p class="tagline">The Eternal City</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="heritage.html">Heritage</a></li>
+                <li><a href="booking.html" class="active">Hotel Booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Hotel Booking</h2>
+                <p>Find your perfect accommodation in Rome</p>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-container">
+                    <div class="booking-info">
+                        <h3>Book Your Stay in Rome</h3>
+                        <p>Complete the form below to book your accommodation in Rome. Our team will process your request and confirm your reservation within 24 hours.</p>
+                        <div class="booking-features">
+                            <div class="feature">
+                                <img src="https://via.placeholder.com/50" alt="Best Rates">
+                                <h4>Best Rate Guarantee</h4>
+                                <p>We offer the best rates for hotels across Rome</p>
+                            </div>
+                            <div class="feature">
+                                <img src="https://via.placeholder.com/50" alt="Free Cancellation">
+                                <h4>Free Cancellation</h4>
+                                <p>Most bookings offer free cancellation options</p>
+                            </div>
+                            <div class="feature">
+                                <img src="https://via.placeholder.com/50" alt="24/7 Support">
+                                <h4>24/7 Customer Support</h4>
+                                <p>Our team is available around the clock</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form id="bookingForm" class="booking-form">
+                        <h3>Reservation Details</h3>
+                        
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h4>Personal Information</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name*</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name*</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address*</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number*</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nationality">Nationality*</label>
+                                <select id="nationality" name="nationality" required>
+                                    <option value="">Select your nationality</option>
+                                    <option value="US">United States</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="FR">France</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="IT">Italy</option>
+                                    <option value="ES">Spain</option>
+                                    <option value="JP">Japan</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Stay Details -->
+                        <div class="form-section">
+                            <h4>Stay Details</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="checkIn">Check-in Date*</label>
+                                    <input type="date" id="checkIn" name="checkIn" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="checkOut">Check-out Date*</label>
+                                    <input type="date" id="checkOut" name="checkOut" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="adults">Adults*</label>
+                                    <select id="adults" name="adults" required>
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="children">Children (0-17)</label>
+                                    <select id="children" name="children">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rooms">Rooms*</label>
+                                    <select id="rooms" name="rooms" required>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Hotel Preferences -->
+                        <div class="form-section">
+                            <h4>Hotel Preferences</h4>
+                            <div class="form-group">
+                                <label for="hotelClass">Hotel Class</label>
+                                <select id="hotelClass" name="hotelClass">
+                                    <option value="">No preference</option>
+                                    <option value="3">3 Star</option>
+                                    <option value="4">4 Star</option>
+                                    <option value="5">5 Star</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget per Night (€)</label>
+                                <select id="budget" name="budget">
+                                    <option value="">No preference</option>
+                                    <option value="economy">Economy (€0-€100)</option>
+                                    <option value="moderate">Moderate (€100-€200)</option>
+                                    <option value="luxury">Luxury (€200+)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Preferred Amenities</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="amenities" value="wifi"> Free WiFi
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="amenities" value="breakfast"> Breakfast Included
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="amenities" value="pool"> Swimming Pool
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="amenities" value="parking"> Free Parking
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="amenities" value="spa"> Spa Services
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="amenities" value="gym"> Fitness Center
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="location">Preferred Location</label>
+                                <select id="location" name="location">
+                                    <option value="">No preference</option>
+                                    <option value="center">City Center</option>
+                                    <option value="vatican">Near Vatican</option>
+                                    <option value="colosseum">Near Colosseum</option>
+                                    <option value="termini">Near Termini Station</option>
+                                    <option value="trastevere">Trastevere</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Special Requests -->
+                        <div class="form-section">
+                            <h4>Special Requests</h4>
+                            <div class="form-group">
+                                <label for="roomType">Room Type</label>
+                                <select id="roomType" name="roomType">
+                                    <option value="standard">Standard Room</option>
+                                    <option value="deluxe">Deluxe Room</option>
+                                    <option value="suite">Suite</option>
+                                    <option value="family">Family Room</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="bedType">Bed Type</label>
+                                <select id="bedType" name="bedType">
+                                    <option value="">No preference</option>
+                                    <option value="single">Single Bed</option>
+                                    <option value="double">Double Bed</option>
+                                    <option value="twin">Twin Beds</option>
+                                    <option value="king">King Size Bed</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="specialRequests">Additional Requests</label>
+                                <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Please specify any special requirements or requests..."></textarea>
+                            </div>
+                        </div>
+                        
+                        <!-- Terms and Conditions -->
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label class="checkbox-label terms-label">
+                                    <input type="checkbox" name="terms" required>
+                                    I agree to the <a href="#" class="terms-link">terms and conditions</a>*
+                                </label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    Subscribe to our newsletter for exclusive offers
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Submit Booking Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://via.placeholder.com/80" alt="Rome Tourism Logo">
+                    <h3>Rome Tourism</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="heritage.html">Heritage</a></li>
+                        <li><a href="booking.html">Hotel Booking</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Information</h4>
+                    <p>Tourism Office of Rome</p>
+                    <p>Via del Corso 101, Rome, Italy</p>
+                    <p>Phone: +39 06 1234 5678</p>
+                    <p>Email: info@rometourism.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Rome Tourism. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
