@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <h2>Tasks</h2>
+
+    <h3> Variables, Functions, Conditions & Loops</h3>
+    <button onclick="bmiCalc()">BMI Calculator</button>
+    <button onclick="tempConvert()">Convert Temperature</button>
+
+    <h3> Pop-up Boxes</h3>
+    <button onclick="showAlert()">Alert</button>
+    <button onclick="confirmDelete()">Confirm Delete</button>
+    <button onclick="askName()">Prompt</button>
+
+    <h3> Event Handling & DOM Manipulation</h3>
+    <button onclick="changeMsg()">Change Text</button>
+    <button onmouseover="hoverEffect(this)" onmouseout="resetHover(this)">Hover</button>
+    <p id="msg">Original Text</p>
+
+    <h4>Dynamic List</h4>
+    <input type="text" id="itemInput" placeholder="Type item">
+    <button onclick="addItem()">Add</button>
+    <ul id="list"></ul>
+
+    <h3> Form Validation</h3>
+    <form onsubmit="return checkForm()">
+        <input type="text" id="userName" placeholder="Name">
+        <input type="email" id="userEmail" placeholder="Email">
+        <input type="password" id="userPass" placeholder="Password">
+        <button type="submit">Submit</button>
+        <p id="errorMsg" style="color: red;"></p>
+    </form>
+
+    <h3> JavaScript Objects & AJAX</h3>
+    <p id="dateTime"></p>
+    <button onclick="randomNumber()">Random Number</button>
+    <p id="rand"></p>
+
+    <h4>Weather</h4>
+    <button onclick="getWeather()">Get Weather</button>
+    <p id="weatherInfo"></p>
+
+
+</body>
+
+</html>
