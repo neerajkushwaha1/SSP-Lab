@@ -10,7 +10,7 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        if ("abhinav".equals(username) && "12341234".equals(password)) {
+        if ("neeraj_kushwaha".equals(username) && "neeraj123".equals(password)) {
             request.setAttribute("username", username);
             RequestDispatcher dispatcher = request.getRequestDispatcher("WelcomeServlet");
             dispatcher.forward(request, response);
